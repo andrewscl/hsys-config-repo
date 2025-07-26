@@ -5,7 +5,16 @@ spring:
   application:
     name: user-service
 
-database:
-  url: 
-  username: postgres
-  password: secret
+  datasource:
+    url: jdbc:postgresql://localhost:5434/userdb
+    username: postgres
+    password: Piero197808cl
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
