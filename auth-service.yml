@@ -6,5 +6,5 @@ spring:
     name: auth-service
 
 jwt:
-  secret: secretKey
+  secret: ${JWT_SECRET}
   expiration: 3600000
